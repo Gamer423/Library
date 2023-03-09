@@ -8,27 +8,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="maincontainer">
+        <h1 class="name">Library App</h1>
 
-<form action="">
-    <div>
-        <label for="author">Author:</label>
-        <input type="text" name="author" id="author">
-
+    <div id="inputdiv">
+        <div>
         <label for="title">Title:</label>
         <input id="title" type="text">
-
+        </div>
+        <div>
+        <label for="author">Author:</label>
+        <input type="text" name="author" id="author">
+        </div> 
+        <div>
         <label for="pages">Pages:</label>
         <input id="pages" type="number">
-
+        </div>
+        <div>
         <label for="read">Read:</label>
-        <input id="read" type="checkbox">
-    </div>
-</form>
-<button onclick="getInfo()">Add a Book</button>
+        <input id="read" type="checkbox" value="Read">
+        </div>
+        <button onclick="createnewbook()">Add a Book</button>
+        </div>
+
+<button onclick="popup()" id="popupbutton">Add a Book!</button>
 
 
+<div class="booktablediv"></div>
+    <table class="booktable">
+        <thead>
+            <tr>
+                <th class="th">Title</th>
+                <th class="th">Author</th>
+                <th class="th">Pages</th>
+                <th class="th">Read: </th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
 
-
+</div>
     <script src="js.js"></script>
 </body>
 </html>

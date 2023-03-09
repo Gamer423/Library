@@ -33,6 +33,7 @@ let createnewbook = function () {
     title = document.getElementById("title").value = '';
     author = document.getElementById("author").value = '';
     pages = document.getElementById("pages").value = '';
+    read = document.getElementById("read").checked = false;
 }
 
 function kys (){
